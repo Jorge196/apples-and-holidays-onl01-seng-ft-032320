@@ -61,7 +61,7 @@ def all_supplies_in_holidays(holiday_hash)
   # etc.
   holiday_hash.each do |season, holiday|
     puts "#{season.to_s.capitalize}:"
-    holiday.each do |holiday, supply|
+  
       array = holiday.to_s.split("_").map
       final_holiday = []
       array.each do |i|
@@ -80,6 +80,7 @@ def all_holidays_with_bbq(holiday_hash)
   # include the string "BBQ"
     answer = []
     holiday_hash.each do |season, data|
+        holiday.each do |holiday, supply|
       value.each do |supply|
         if supply == "BBQ"
           answer.push(holiday)
