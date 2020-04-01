@@ -75,6 +75,6 @@ def all_holidays_with_bbq(holiday_hash)
     holiday_hash.collect{ |season, data|
         holiday.select{ |holiday, supply|
           supplies.include?("BBQ")
-        }.keys 
-      }.flatten 
+        }.keys
+      }.flatten
 end
